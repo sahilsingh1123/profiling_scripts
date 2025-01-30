@@ -6,13 +6,13 @@ This project is focused on exploring multiple ways of profiling python scripts
 
 <h2>Tools <br></h2>
 <h3>Inbuilt <br></h3>
+- line-profiler
 - cProfile
 - timeit
 
 <h3>3rd party</h3>
-- snakeviz
-- tuna
-- line-profiler
+- snakeviz (visualise cprofile stats)
+- tuna (visualise cprofile stats)
 - memory-profiler
 - py-spy
 - pyinstrument
