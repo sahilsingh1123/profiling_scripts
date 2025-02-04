@@ -1,6 +1,5 @@
 """
 Cache will keep on increasing
-
 """
 
 
@@ -39,4 +38,5 @@ if __name__=="__main__":
     print_pid()
     while True:
         for _ in range(1000):
-            processor.process_clear_cache(np.random.rand(1000))
+            # processor.process_clear_cache(np.random.rand(1000))
+            processor.process(np.random.rand(1000))

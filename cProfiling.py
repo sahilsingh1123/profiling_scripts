@@ -1,14 +1,23 @@
+"""
+cProfile
+python -m cProfile -s time your_script.py
+# Run and save stats
+python -m cProfile -o profile.stats your_script.py
+snakeviz profile.stats
+"""
+
+
 import time
 import cProfile, pstats
 
 
-def slow_function():
+def fast_function():
     time.sleep(1)
     result = sum(i ** 2 for i in range(10_00000))
     return result
 
 
-def fast_function():
+def slow_function():
     time.sleep(1)
     result = sum([i ** 2 for i in range(10_00000)])
     return result
