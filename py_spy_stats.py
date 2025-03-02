@@ -19,6 +19,8 @@ py-spy record --format speedscope -o profile.json -- python my_script.py
 stats:
     %Own: Percentage of time spent in the function itself (excludes children).
     %Total: Includes time spent in child functions.
+    *TotalTime**: The total time spent in the function and all its children.
+    **Function (filename:line)**: The name of the function and where it's located in the code.
 
 
 """
