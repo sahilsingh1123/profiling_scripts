@@ -8,6 +8,8 @@ python -m memory_profiler my_script.py
 # it creates .dat file
 mprof run my_script.py
 mprof plot
+
+# garbage collector
 gc.collect()
 """
 

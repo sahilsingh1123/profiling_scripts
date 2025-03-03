@@ -4,6 +4,12 @@ python -m cProfile -s time your_script.py
 # Run and save stats
 python -m cProfile -o profile.stats your_script.py
 snakeviz profile.stats
+
+
+tottime - The total time spent in the given function alone
+percall - avg time spent in given func alone
+cumtime - time including sub functions calls
+percall - avg cum time per call
 """
 
 
@@ -19,7 +25,7 @@ def fast_function():
 
 def slow_function():
     time.sleep(1)
-    result = sum([i ** 2 for i in range(10_00000)])
+    result = sum([i ** 2 for i in range(10_000000)])
     return result
 
 

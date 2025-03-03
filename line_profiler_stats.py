@@ -26,33 +26,33 @@ def process_data_efficiently():
 
 
 # Can be used with decorators
-# print(process_data())
-# print(process_data_efficiently())
+print(process_data())
+print(process_data_efficiently())
 
 if __name__ == "__main__":
     '''
     # If we use below logic then no need to use decorator @profile on methods
     '''
-    # Initialize the profiler
-    lp = LineProfiler()
-
-    # Add the functions to profile
-    lp.add_function(process_data)
-    lp.add_function(process_data_efficiently)
-
-    # Wrap the functions with profiling
-    profiled_process_data = lp(process_data)
-    profiled_process_efficiently = lp(process_data_efficiently)
-
-    # Run the profiled functions
-    print(profiled_process_data())
-    print(profiled_process_efficiently())
-
-    # Print the profiling results
-    lp.print_stats()
-    # Directly write stats to a file
-    with open("line_profile_stats.txt", "w") as f:
-        lp.print_stats(stream=f)
+    # # Initialize the profiler
+    # lp = LineProfiler()
+    #
+    # # Add the functions to profile
+    # lp.add_function(process_data)
+    # lp.add_function(process_data_efficiently)
+    #
+    # # Wrap the functions with profiling
+    # profiled_process_data = lp(process_data)
+    # profiled_process_efficiently = lp(process_data_efficiently)
+    #
+    # # Run the profiled functions
+    # print(profiled_process_data())
+    # print(profiled_process_efficiently())
+    #
+    # # Print the profiling results
+    # lp.print_stats()
+    # # Directly write stats to a file
+    # with open("line_profile_stats.txt", "w") as f:
+    #     lp.print_stats(stream=f)
 
 """
 Time - Total time spent on the line (microseconds)
